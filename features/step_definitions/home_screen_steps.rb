@@ -17,3 +17,11 @@ end
 And(/^I see "([^"]*)" in right unit field$/) do |value|
   puts("Right field value is #{value}")
 end
+
+When(/^I click "([^"]*)" in left column$/) do |button|
+  puts("#{button} was clicked")
+end
+
+Then(/^I get "([^"]*)" in target field$/) do |target|
+  puts("We can see " + target)
+end
